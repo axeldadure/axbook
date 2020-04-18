@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+            "id" : 1,
+            "name" : "Mary",
+            "username" : "marylovesbooks",
+            "password" : "password1234"
+        },
+        {
+            "id" : 2,
+            "name" : "James",
+            "username" : "coolcatjaime",
+            "password" : "thisismypass"
+        }
+    ]
+    
+}
