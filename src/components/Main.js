@@ -5,12 +5,15 @@ import Booklist from './Booklist';
 
 function Main(props) {
 
-    const [input, setInput] = useState();
+    const [input, setInput] = useState("");
 
-    const [searchQuery, setSearchQuery] = useState();
+    const [searchQuery, setSearchQuery] = useState("");
 
     const setInputText = (value) => {
-        setInput(value);
+        const regex = /^([a-zA-Z ',?! 0-9]*)$/;
+        if (value === '' || regex.test(value)) {
+            setInput(value);
+        }
     }
 
     const handleSearchSubmit = (event) => {
