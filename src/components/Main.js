@@ -10,7 +10,7 @@ function Main(props) {
     const [searchQuery, setSearchQuery] = useState("");
 
     const setInputText = (value) => {
-        const regex = /^([a-zA-Z ',?! 0-9]*)$/;
+        const regex = /^([a-zA-Z ',?!éèêâôûîà 0-9]*)$/;
         if (value === '' || regex.test(value)) {
             setInput(value);
         }
